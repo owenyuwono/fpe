@@ -32,7 +32,7 @@ func TestEncrypt(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got, err := Encrypt(tt.args.modulus, tt.args.subject, tt.args.key, tt.args.tweak)
+			got, err := Encrypt(tt.args.modulus, tt.args.subject, tt.args.key, tt.args.tweak, 3)
 			if tt.wantErr {
 				if err == nil {
 					t.Errorf("Encrypt() error = %v, wantErr %v", err, tt.wantErr)
