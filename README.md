@@ -15,6 +15,8 @@ Current implementation uses the FE1 scheme from the paper "Format-Preserving Enc
 
 Ported from [node-fe1-fpe](https://github.com/eCollect/node-fe1-fpe) which was ported from [java-fpe](https://github.com/Worldpay/java-fpe) which was ported from [DotFPE](https://dotfpe.codeplex.com/) which was ported from [Botan Library](http://botan.randombit.net/).
 
+Uses `math/big` to handle integers under the hood, so no need to worry about big integers.
+
 ## Installation
 
 ```
