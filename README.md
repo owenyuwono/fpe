@@ -1,4 +1,10 @@
 # Golang FPE (Format Preserving Encryption)
+
+### Dependency
+```
+golang.org/x/text v0.3.6
+```
+
 ## Theory
 Format preserving encryption (FPE) refers to a set of techniques for encrypting data such that the ciphertext has the same format as the plaintext. For instance, you can use FPE to encrypt credit card numbers with valid checksums such that the ciphertext is also an credit card number with a valid checksum, or similarly for bank account numbers, US Social Security numbers, or even more general mappings like English words onto other English words.
 
