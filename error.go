@@ -7,8 +7,5 @@ func (e Error) Error() string {
 	return string(e)
 }
 
-// ErrModTooSmall ...
-var ErrModTooSmall Error = "modulus range is too small"
-
-// ErrNegativeArgs ...
+// ErrNegativeArgs error is returned when modulus argument is a negative number
 var ErrNegativeArgs Error = "negative numbers cannot be used as modulus"
