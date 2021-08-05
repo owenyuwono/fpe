@@ -19,7 +19,7 @@ func TestEncrypt(t *testing.T) {
 		want    *big.Int
 		wantErr bool
 	}{
-		{"success - default", args{10001, 1, "my-secret-key", "my-non-secret-tweak"}, big.NewInt(5011), false},
+		{"success - default", args{10001, 1, "my-secret-key", "my-non-secret-tweak"}, big.NewInt(100), false},
 		{"success - different key", args{10001, 1, "different-key", "should-yield-different-result"}, big.NewInt(8779), false},
 		{"success - default with subject 2", args{10001, 2, "my-secret-key", "my-non-secret-tweak"}, big.NewInt(9102), false},
 		{"success - high modulus", args{99999999, 1, "my-secret-key", "my-non-secret-tweak"}, big.NewInt(88925566), false},
